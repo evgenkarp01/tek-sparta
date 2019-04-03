@@ -20,7 +20,9 @@ body {
     line-height: rem(20);
     font-size: rem(16);
 }
-
+a:hover{
+    color: $accent-color;
+}
 .ttl{
     text-align: left;
     margin-left: auto;
@@ -28,7 +30,7 @@ body {
     h1{
         font-size: rem(40);
         font-weight: bold;
-        font-family: $CN, Areal, sans-serif;
+        font-family: $PN, Areal, sans-serif;
     }
     h2{
         font-size: rem(22);
@@ -51,6 +53,7 @@ body {
         font-weight: 600;
     }
 }
+
 .btn{
     text-align: left;
     margin-left: auto;
@@ -114,7 +117,6 @@ body {
 
 
 .window-modal{
-    display: none;
     max-width: 550px;
     width: 100%;
     margin-left: auto;
@@ -123,7 +125,8 @@ body {
     min-height: 300px;
     border-radius: 8px;
     padding: 30px 25px;
-    background: #FFEFD5;
+    background: $bg-color !important;
+    color: #fff;
     form{
         .logo-form{
             img{
@@ -211,7 +214,7 @@ header{
     .flex-header{
         min-height: inherit;
     }
-    .logo{
+    .logich{
         a{
             text-decoration: none;
         }
@@ -224,6 +227,7 @@ header{
                 font-weight: 400;
                 line-height: 67px;
                 text-transform: uppercase;
+                letter-spacing: -0.5px;
             }
             &:last-child{
                 color: $accent-color;
@@ -266,9 +270,8 @@ header{
             margin-top: -90px;
             h1{
                 color: #ffffff;
-                font-family: Cuprum;
-                font-size: 73px;
-                font-weight: 700;
+                font-family: Playfair;
+                font-size: 65px;
                 line-height: 86px;
                 text-transform: uppercase;
             }
@@ -305,8 +308,7 @@ header{
                     max-width: 100%;
                     width: auto !important;
                     max-height: 600px;
-                    height: 100%;
-
+                    height: auto;
                 }
             }
 
@@ -322,7 +324,6 @@ header{
                     display: flex !important;
                     justify-content: center;
                     align-items: center;
-                    margin: 0 7px;
                     cursor: pointer;
                     img{
 
@@ -334,4 +335,231 @@ header{
             }
         }
     }
+}
+
+.two-screen{
+    .elya{
+        position: relative;
+        
+        img{
+            position: relative;
+            bottom: -3px;
+            max-width: 400px;
+            height: auto;
+            width: 100%;
+        }
+    }
+    .dialog{
+        .name{
+            h2{
+                color: #c2c2c2;
+                font-family: "DIN Pro";
+                font-size: 57px;
+                font-weight: 400;
+                line-height: 67px;
+            }
+            .whois{
+                color: #666666;
+                font-family: Ubuntu;
+                font-size: 16px;
+            }
+        }
+        .txt{
+            margin-top: 60px;
+            position: relative;
+            padding: 50px 60px;
+            p{
+                color: #baffde;
+                font-family: Ubuntu;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 23px;
+                padding: 7px 0;
+            }
+            &:before{
+                content:"";
+                position: absolute;
+                background:url(../img/quot.png)no-repeat;
+                width: 40px;
+                height: 30px;
+                top: 0;
+                left: 0;
+            }
+            &:after{
+                content:"";
+                position: absolute;
+                background:url(../img/quot.png)no-repeat;
+                width: 40px;
+                height: 30px;
+                bottom: 0;
+                right: 0;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+footer{
+    background:$bg-color;
+    .logo{
+        .most{
+            font-family: "DIN Pro";
+            font-size: 57px;
+            font-weight: 400;
+            color: #c2c2c2;
+            line-height: 67px;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .sbor{
+            color: #baffde;
+            font-family: "Roboto Condensed";
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: -0.38px;
+            margin-top: -6px;
+            text-transform: uppercase;
+        }
+    }
+    .insta{
+        color: #fff;
+        font-size: 14px;
+        a{
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+            border-bottom: 2px solid $btn-color;
+            &:hover{
+                color: $btn-color;
+            }
+        }
+    }
+    .copiright{
+        border-top: 1px solid #313938;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px 0;
+        a{
+            color: #2ECC71;
+        }
+        p{
+            color: #797979;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+}
+.slick-current .item{
+    background: $accent-color !important;
+}
+
+
+
+
+
+
+
+
+
+///////////magnific
+
+$bgcolor-form: #F4FCFF;
+.window-modal{
+    max-width: 550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 30px 25px;
+    background: $bgcolor-form;
+    form{
+        .logo-form{
+            img{
+                width: 120px;
+                height: 49px;
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 26px;
+        }
+        .flex-form{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 10px;
+                height: 35px;
+                width: 100%;
+                color: $accent-color;
+                border: 1px solid $accent-color;
+                border-radius: 3px;
+                padding: 0 15px;
+                background: none;
+                &:first-child{
+                    margin-top: 20px;
+                }
+                &:focus{
+                    outline: none;
+                    border-color: $btn-color;
+                }
+                &.error{
+                    border-color: #f00;
+                }
+            }
+
+            .btn{
+                margin-top: 35px;
+                button{}
+            }
+        }
+    }
+}
+.mfp-close-btn-in .mfp-close{
+    color: $btn-color;
+}
+.persd-sogl{
+    margin: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    a{
+        color: $accent-color;
+    }
+}
+
+
+
+.loaderArea{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.96);
+}
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
 }
