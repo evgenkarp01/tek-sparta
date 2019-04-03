@@ -1,6 +1,5 @@
-@include font($RCb, $bold, $normal, $RCN);
 @include font($RC, $normal, $normal, $RCN);
-@include font($DCb, $bold, $normal, $DN);
-@include font($Ui, $normal, $italic, $UN);
-@include font($U, $normal, $normal, $UN);
-@include font($P, $bold, $normal, $PN);
+@include font($Rbk, $black, $normal, $RN);
+@include font($Rb, $bold, $normal, $RN);
+@include font($Rm, $medium, $normal, $RN);
+@include font($R, $normal, $normal, $RN);

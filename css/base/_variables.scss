@@ -8,24 +8,22 @@ $focus-color: $accent-color;
 $fz: rem(16);
 $h2-fz:rem(22);
 $h3-fz:rem(20);
-$btn-color: #d84d21;
+$btn-color: #ED1A23;
 $placeholder-color: #767676;
 $browser-context: 16; // Default
 $dir:'../fonts/';
 
-$RCb: 'RobotoCondensed-Bold';
+$Rbk: 'Roboto-Black';
 $RC: 'RobotoCondensed-Regular';
-$DCb: 'DINPro-CondensedBold';
-$Ui: 'UbuntuItalic';
-$U: 'UbuntuRegular';
-$P: 'PlayfairDisplayRegular';
+$Rb: 'Roboto-Bold';
+$Rm: 'Roboto-Medium';
+$R: 'Roboto-Regular';
 
+
+$RN:"Roboto";
 $RCN:"Roboto Condensed";
-$DN:"DIN Pro";
-$UN:"Ubuntu";
-$PN:"Playfair";
 
-$font-text: $UN;
+$font-text: $RN;
 
 $normal: normal;
 $italic: italic;
