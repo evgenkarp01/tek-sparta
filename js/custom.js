@@ -2,15 +2,8 @@
 $( document ).ready(function() {
 
 
- $('.photo-book').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.courusel-book'
-});
-$('.courusel-book').slick({
-  slidesToShow: 4,
+$('.slick-magnific-gallery').slick({
+  slidesToShow: 6,
   asNavFor: '.photo-book',
   dots: false,
   arrows: false,
@@ -18,12 +11,12 @@ $('.courusel-book').slick({
   responsive: [{
       breakpoint: 992,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 5
       }
     }, {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 4
       }
     }
     ]

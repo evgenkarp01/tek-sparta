@@ -18,5 +18,15 @@
 }
 
 @mixin shadow(){
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+@mixin sprite($t, $l, $h, $w, $bpOne, $bpTwo){
+    position: absolute;
+    content:"";
+    top: $t+px;
+    left: $l+px;
+    height: $h+px;
+    width: $w+px;
+    background:url("../src/img/sprites/sprite.svg")no-repeat;
+    background-position: $bpOne+px $bpTwo+px;
 }

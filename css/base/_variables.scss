@@ -1,17 +1,22 @@
-$bg-color:#242B2E;
-$link-color: #00b;
+$bg-color:rgba(10, 106, 160, 0.48);;
+$link-color: #ED1A23;
 $wt:#fff;
 $bk:#000;
 $dark:#ededed;
 $accent-color: #adfffa;
 $focus-color: $accent-color;
 $fz: rem(16);
-$h2-fz:rem(22);
-$h3-fz:rem(20);
+$h1-fz: 66;
+$h2-fz: 40;
+$h3-fz: 28;
+$h4-fz: 18;
+$h5-fz: 16;
+$h6-fz: 14;
 $btn-color: #ED1A23;
-$placeholder-color: #767676;
+$placeholder-color: #fff;
 $browser-context: 16; // Default
 $dir:'../fonts/';
+
 
 $Rbk: 'Roboto-Black';
 $RC: 'RobotoCondensed-Regular';
@@ -19,10 +24,8 @@ $Rb: 'Roboto-Bold';
 $Rm: 'Roboto-Medium';
 $R: 'Roboto-Regular';
 
-
 $RN:"Roboto";
 $RCN:"Roboto Condensed";
-
 $font-text: $RN;
 
 $normal: normal;
@@ -33,5 +36,5 @@ $medium: 500;
 $heavy: 800;
 $black: 900;
 $light: 300;
-$mt:100px;
-$mb:60px;
+$mt:110px;    /*margin top for HEADER h1-h6*/
+$mb:70px;     /*margin top for BLOCK from header*/
