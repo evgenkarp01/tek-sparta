@@ -1,0 +1,110 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../../../../src/img/sprites/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 3.2em 20.3em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../../../../src/img/sprites/sprite.png");
+}
+
+
+
+  .icon.arrow:before {
+      background-position: 0em 0em;
+      width: 3.2em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.city:before {
+      background-position: 0em -1.8em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.fb:before {
+      background-position: 0em -3.4em;
+      width: 3em;
+      height: 3em;
+  }
+
+
+
+
+  .icon.inst:before {
+      background-position: 0em -6.4em;
+      width: 3em;
+      height: 3em;
+  }
+
+
+
+
+  .icon.mobile:before {
+      background-position: 0em -9.4em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.mobile-black:before {
+      background-position: 0em -10.9em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.phone:before {
+      background-position: 0em -12.5em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.phone-black:before {
+      background-position: 0em -14.1em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.phone-red:before {
+      background-position: 0em -15.7em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.vk:before {
+      background-position: 0em -17.3em;
+      width: 3em;
+      height: 3em;
+  }
+
+
+
+
+
