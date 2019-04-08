@@ -224,10 +224,10 @@ input:focus, textarea:focus{
 }
 .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
 
-.load :first-child{background:#19A68C;animation-delay:-1.5s}
-.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
-.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
-.load :last-child{background:#193B48}
+.load :first-child{background:#fff;animation-delay:-1.5s}
+.load :nth-child(2){background:$accent-color;animation-delay:-1s}
+.load :nth-child(3){background:#fff;animation-delay:-0.5s}
+.load :last-child{background:$accent-color}
 
 @keyframes spin{
   0%,100%{transform:translate(0)}
@@ -248,16 +248,14 @@ input:focus, textarea:focus{
 }
 
 /*//////////magnific*/
-$bgcolor-form: #F4FCFF;
 .window-modal{
-    display: none;
     max-width: 550px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     min-height: 300px;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 30px 25px;
     background: $bgcolor-form;
     form{
@@ -269,6 +267,7 @@ $bgcolor-form: #F4FCFF;
         }
         h2{
             text-align: center;
+            color: $wt;
             font-size: 26px;
         }
         .flex-form{
@@ -278,7 +277,7 @@ $bgcolor-form: #F4FCFF;
             display: -o-flex;
             display: flex;
             flex-direction: column;
-            input{
+            input, textarea{
                 margin-bottom: 10px;
                 height: 35px;
                 width: 100%;
@@ -298,7 +297,10 @@ $bgcolor-form: #F4FCFF;
                     border-color: #f00;
                 }
             }
-
+            textarea{
+              height: 85px;
+              padding-top: 10px;
+            }
             .btn{
                 margin-top: 35px;
                 button{}
